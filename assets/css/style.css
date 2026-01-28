@@ -2246,6 +2246,7 @@ footer::before {
     max-height: 100%;
     object-fit: contain;
     transition: transform var(--transition-slow);
+    border-radius: var(--radius-lg);
 }
 
 .product-card:hover .product-card-image img {
@@ -2585,6 +2586,7 @@ footer::before {
     height: 100%;
     object-fit: contain;
     transition: transform var(--transition-slow);
+    border-radius: var(--radius-lg);
 }
 
 .product-detail-left .product-image-wrapper:hover img {
