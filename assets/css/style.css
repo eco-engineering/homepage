@@ -1262,6 +1262,20 @@ header.scrolled {
         margin-bottom: var(--spacing-lg);
     }
 
+    .contact-item {
+        margin-bottom: var(--spacing-sm);
+        gap: var(--spacing-sm);
+    }
+
+    .contact-label {
+        font-size: 0.875rem;
+        min-width: 60px;
+    }
+
+    .contact-value {
+        font-size: 1rem;
+    }
+
     .form-input,
     .form-textarea,
     .form-select {
@@ -2782,6 +2796,51 @@ footer::before {
     }
 }
 
+/* Mobile Spec Table Responsive */
+@media (max-width: 768px) {
+    .product-spec-box {
+        padding: var(--spacing-md);
+        overflow-x: auto;
+    }
+
+    .product-spec-box h3 {
+        font-size: 1.25rem;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .spec-table-compact {
+        font-size: 0.8125rem;
+        min-width: 100%;
+    }
+
+    .spec-table-compact th,
+    .spec-table-compact td {
+        padding: 0.625rem 0.5rem;
+        white-space: nowrap;
+    }
+
+    .spec-table-compact th {
+        font-size: 0.75rem;
+    }
+
+    .product-detail-left .product-image-wrapper {
+        height: 280px;
+        padding: var(--spacing-md);
+    }
+
+    .product-image-header {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .product-image-title {
+        font-size: 1.5rem;
+    }
+
+    .product-image-desc {
+        font-size: 0.875rem;
+    }
+}
+
 /* Processing Benefits Section */
 .processing-benefits {
     background: var(--gradient-section);
@@ -2836,4 +2895,58 @@ footer::before {
     font-size: 1.0625rem;
     color: var(--color-text-muted);
     line-height: 1.6;
+}
+
+/* ========================
+   MOBILE BOTTOM BAR
+   ======================== */
+.mobile-bottom-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    background: var(--color-surface);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-bottom-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.mobile-bottom-call {
+    background: var(--color-accent-hover);
+    color: white;
+}
+
+.mobile-bottom-call:hover {
+    background: var(--color-accent);
+}
+
+.mobile-bottom-inquiry {
+    background: var(--color-primary-dark);
+    color: white;
+}
+
+.mobile-bottom-inquiry:hover {
+    background: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .mobile-bottom-bar {
+        display: flex;
+    }
+
+    footer {
+        padding-bottom: calc(var(--spacing-xl) + 60px);
+    }
 }
