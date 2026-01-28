@@ -2909,6 +2909,7 @@ footer::before {
     z-index: var(--z-fixed);
     background: var(--color-surface);
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: env(safe-area-inset-bottom, 8px);
 }
 
 .mobile-bottom-btn {
