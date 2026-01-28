@@ -1,4 +1,21 @@
+# All robots
 User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Naver
+User-agent: Yeti
+Allow: /
+
+# Daum/Kakao
+User-agent: Daumoa
+Allow: /
+
+# Bing
+User-agent: Bingbot
 Allow: /
 
 Sitemap: https://www.eco-eng.kr/sitemap.xml
